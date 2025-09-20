@@ -55,3 +55,12 @@ contactForm.addEventListener('submit', async (e) => {
         alert('An error occurred. Please try again.');
     }
 });
+// main.js
+
+// Mobile menu toggle
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+
+mobileMenuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+});
