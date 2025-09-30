@@ -1,0 +1,478 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kotigari Sandeep | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <header class="fixed top-0 left-0 w-full z-50 p-4 bg-gray-900 bg-opacity-90 backdrop-blur-sm">
+        <nav class="flex justify-between items-center max-w-6xl mx-auto">
+            <a href="#" class="text-xl font-bold text-blue-400 hover:text-blue-300 transition-colors">Kotigari Sandeep</a>
+            
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="hover:text-blue-400 transition-colors">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-400 transition-colors">About</a></li>
+                <li><a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a></li>
+                <li><a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a></li>
+                <li><a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a></li>
+            </ul>
+
+            <button id="mobile-menu-button" class="md:hidden text-gray-200 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+    </header>
+
+    <div id="mobile-menu" class="hidden fixed top-16 left-0 w-full bg-gray-900 z-40 p-4 text-center shadow-lg">
+        <ul class="flex flex-col space-y-4">
+            <li><a href="#home" class="text-lg text-white hover:text-blue-400 transition-colors">Home</a></li>
+            <li><a href="#about" class="text-lg text-white hover:text-blue-400 transition-colors">About</a></li>
+            <li><a href="#skills" class="text-lg text-white hover:text-blue-400 transition-colors">Skills</a></li>
+            <li><a href="#projects" class="text-lg text-white hover:text-blue-400 transition-colors">Projects</a></li>
+            <li><a href="#contact" class="text-lg text-white hover:text-blue-400 transition-colors">Contact</a></li>
+        </ul>
+    </div>
+
+    <section id="home" class="min-h-screen flex items-center justify-center p-8 pt-24">
+    <div class="container mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
+        <div class="md:w-1/2 flex justify-center md:justify-start">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-400 shadow-lg animate-pulse-glow">
+                    <img src="https://via.placeholder.com/500" alt="Sandeep Kotigari" class="object-cover w-full h-full">
+                </div>
+            </div>
+
+            <div class="md:w-1/2 text-center md:text-left">
+                <p class="text-lg text-blue-400 mb-2">Hello, it's me</p>
+                <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-4">Kotigari Sandeep</h1>
+                <h2 class="text-2xl md:text-3xl font-semibold text-gray-300 mb-4">And I'm an <span class="text-blue-400">AI Engineer</span></h2>
+                <p class="text-gray-400 max-w-lg mx-auto md:mx-0 mb-8">
+                    Passionate about building intelligent systems that solve real-world problems.
+                    I specialize in machine learning and deep learning applications.
+                </p>
+                <div class="flex justify-center md:justify-start space-x-4 mb-8">
+                    <a href="https://github.com/yourusername" target="_blank" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="https://instagram.com/yourusername" target="_blank" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://facebook.com/yourusername" target="_blank" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-facebook fa-2x"></i></a>
+                </div>
+                <a href="/path/to/your/resume.pdf" download class="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 p-8">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2 flex justify-center lg:justify-start mb-8 lg:mb-0">
+                <img src="https://via.placeholder.com/600x400" alt="About Me" class="rounded-lg shadow-lg border-4 border-blue-400">
+            </div>
+            <div class="lg:w-1/2 text-center lg:text-left">
+                <h3 class="text-3xl md:text-4xl font-bold text-white mb-4">About Me</h3>
+                <h4 class="text-xl md:text-2xl font-semibold text-blue-400 mb-4">AI Engineer</h4>
+                <p class="text-gray-400 leading-relaxed mb-6">
+                    I am a dedicated AI Engineer with a strong passion for developing innovative solutions using machine learning and deep learning. My expertise lies in creating intelligent systems that can analyze data, predict trends, and automate complex tasks. I have a solid background in full-stack development, allowing me to build end-to-end applications from scratch. I am a continuous learner, always exploring new technologies to enhance my skills and tackle challenging projects.
+                </p>
+                <button class="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition-colors">Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 p-8 bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl md:text-4xl font-bold text-white mb-12">Technical Skills</h3>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fab fa-python text-5xl text-blue-400 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">Python</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fab fa-html5 text-5xl text-orange-500 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">HTML</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fab fa-react text-5xl text-cyan-400 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">React.js</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fab fa-node-js text-5xl text-green-500 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">Node.js</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fab fa-js text-5xl text-yellow-400 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">Express</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-database text-5xl text-gray-400 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">MongoDB</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-database text-5xl text-blue-500 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">PostgreSQL</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-robot text-5xl text-purple-400 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">ML</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-brain text-5xl text-pink-400 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">Deep Learning</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-lightbulb text-5xl text-orange-400 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">TensorFlow</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-tasks text-5xl text-yellow-400 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">Project Management</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-code text-5xl text-blue-300 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">TypeScript</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-paint-brush text-5xl text-cyan-600 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">Tailwind CSS</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-wave-square text-5xl text-gray-500 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">Framer Motion</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-sitemap text-5xl text-slate-400 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">Shadcn UI</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-flask text-5xl text-green-300 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">Flask</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-table text-5xl text-blue-400 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">Pandas</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-calculator text-5xl text-indigo-400 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">Numpy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 p-8">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl md:text-4xl font-bold text-white mb-12">My Projects</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://via.placeholder.com/600x400?text=VakilSeva+Image" alt="VakilSeva Project" class="w-full h-auto object-cover border-b-4 border-blue-400">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-white mb-2">VakilSeva - AI Legal Assistant</h4>
+                        <p class="text-gray-400 mb-4">Developed a multilingual AI platform for instant legal assistance and document services, leveraging generative AI and RAG for accurate query resolution.</p>
+                        <div class="flex flex-wrap gap-2 justify-center mb-4">
+                            <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                            <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Flask</span>
+                            <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">AI/ML</span>
+                            <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Generative AI</span>
+                            <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">RAG</span>
+                        </div>
+                        <a href="https://github.com/your-vakilseva-repo" target="_blank" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition-colors">View Project</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://via.placeholder.com/600x400?text=AlgoVision+Pro+Image" alt="AlgoVision Pro Project" class="w-full h-auto object-cover border-b-4 border-blue-400">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-white mb-2">AlgoVision Pro - Interactive Algorithm Visualizer</h4>
+                        <p class="text-gray-400 mb-4">Engineered a dynamic web application with real-time, interactive visualizations to teach core data structures and algorithms, featuring granular user controls.</p>
+                        <div class="flex flex-wrap gap-2 justify-center mb-4">
+                            <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">JavaScript</span>
+                            <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">HTML5</span>
+                            <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">CSS3</span>
+                            <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Firebase</span>
+                        </div>
+                        <a href="https://github.com/your-algovision-repo" target="_blank" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition-colors">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="py-20 p-8 bg-gray-800">
+        <div class="container mx-auto text-center max-w-2xl">
+            <h3 class="text-3xl md:text-4xl font-bold text-white mb-12">Contact Me</h3>
+            <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-6">
+                <div>
+                    <input type="text" name="name" placeholder="Your Name" class="w-full p-4 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white" required>
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="Your Email" class="w-full p-4 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white" required>
+                </div>
+                <div>
+                    <input type="text" name="subject" placeholder="Subject" class="w-full p-4 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white" required>
+                </div>
+                <div>
+                    <textarea name="message" rows="5" placeholder="Your Message" class="w-full p-4 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white" required></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kotigari Sandeep | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 p-4 bg-gray-900 bg-opacity-90 backdrop-blur-sm">
+        <nav class="flex justify-between items-center max-w-6xl mx-auto">
+            <a href="#" class="text-xl font-bold text-blue-400 hover:text-blue-300 transition-colors">Portfolio</a>
+            
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="hover:text-blue-400 transition-colors">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-400 transition-colors">About</a></li>
+                <li><a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a></li>
+                <li><a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a></li>
+                <li><a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-200 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden fixed top-16 left-0 w-full bg-gray-900 z-40 p-4 text-center shadow-lg">
+        <ul class="flex flex-col space-y-4">
+            <li><a href="#home" class="text-lg text-white hover:text-blue-400 transition-colors">Home</a></li>
+            <li><a href="#about" class="text-lg text-white hover:text-blue-400 transition-colors">About</a></li>
+            <li><a href="#skills" class="text-lg text-white hover:text-blue-400 transition-colors">Skills</a></li>
+            <li><a href="#projects" class="text-lg text-white hover:text-blue-400 transition-colors">Projects</a></li>
+            <li><a href="#contact" class="text-lg text-white hover:text-blue-400 transition-colors">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center p-8 pt-24">
+        <div class="container mx-auto flex flex-col md:flex-row items-center gap-12">
+            
+            <!-- Intro Text (LEFT on Desktop, BELOW image on Mobile) -->
+            <div class="md:w-1/2 text-center md:text-left order-2 md:order-1">
+                <p class="text-lg text-blue-400 mb-2">Hello, it's me</p>
+                <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-4">Kotigari Sandeep</h1>
+                <h2 class="text-2xl md:text-3xl font-semibold text-gray-300 mb-4">And I'm an <span class="text-blue-400">AI Engineer</span></h2>
+                <p class="text-gray-400 max-w-lg mx-auto md:mx-0 mb-8">
+                    Passionate about building intelligent systems that solve real-world problems.
+                    I specialize in machine learning and deep learning applications.
+                </p>
+                <div class="flex justify-center md:justify-start space-x-4 mb-8">
+                    <a href="https://github.com/Sandeep123451" target="_blank" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/sandeep-patel-485982312/" target="_blank" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="https://www.instagram.com/sandeep_patel_143_/?__pwa=1" target="_blank" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://www.facebook.com/sandeep.patels.96" target="_blank" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-facebook fa-2x"></i></a>
+                </div>
+                <a href="KOTIGARI SANDEEP RESUME.pdf" download class="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors">Download CV</a>
+            </div>
+
+            <!-- Image (RIGHT on Desktop, ABOVE text on Mobile) -->
+            <div class="md:w-1/2 flex justify-center md:justify-end order-1 md:order-2">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-400 shadow-lg animate-pulse-glow">
+                    <img src="image.jpg" alt="Sandeep Kotigari" class="object-cover w-full h-full">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 p-8">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2 flex justify-center lg:justify-start mb-8 lg:mb-0">
+                <img src="image.jpg" alt="About Me" class="rounded-lg shadow-lg border-4 border-blue-400">
+            </div>
+            <div class="lg:w-1/2 text-center lg:text-left">
+                <h3 class="text-3xl md:text-4xl font-bold text-white mb-4">About Me</h3>
+                <h4 class="text-xl md:text-2xl font-semibold text-blue-400 mb-4">AI Engineer</h4>
+                <p class="text-gray-400 leading-relaxed mb-6">
+                    I am a dedicated AI Engineer with a strong passion for developing innovative solutions using machine learning and deep learning...
+                </p>
+                <button class="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition-colors">Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-20 p-8 bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl md:text-4xl font-bold text-white mb-12">Technical Skills</h3>
+            <!-- Skill Cards -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fab fa-python text-5xl text-blue-400 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">Python</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fab fa-html5 text-5xl text-orange-500 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">HTML</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fab fa-react text-5xl text-cyan-400 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">React.js</p>
+                </div>
+                
+               
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-database text-5xl text-gray-400 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">MongoDB</p>
+                </div>
+                
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-robot text-5xl text-purple-400 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">ML</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-brain text-5xl text-pink-400 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">Deep Learning</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-lightbulb text-5xl text-orange-400 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">TensorFlow</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-tasks text-5xl text-yellow-400 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">Project Management</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-code text-5xl text-blue-300 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">TypeScript</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-paint-brush text-5xl text-cyan-600 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">Tailwind CSS</p>
+                </div>
+               
+              
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-flask text-5xl text-green-300 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">Flask</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-table text-5xl text-blue-400 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">Pandas</p>
+                </div>
+                <div class="p-6 rounded-lg bg-gray-700 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-calculator text-5xl text-indigo-400 mb-4"></i>
+                    <p class="text-lg font-semibold text-white">Numpy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-20 p-8">
+    <div class="container mx-auto text-center">
+        <h3 class="text-3xl md:text-4xl font-bold text-white mb-12">My Projects</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+
+            <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="pr 1.png" alt="VakilSeva Project" class="w-full h-auto object-cover border-b-4 border-blue-400">
+                <div class="p-6">
+                    <h4 class="text-xl font-bold text-white mb-2">VakilSeva - AI Legal Assistant</h4>
+                    <p class="text-gray-400 mb-4">Developed a multilingual AI platform for instant legal assistance and document services, leveraging generative AI and RAG for accurate query resolution.</p>
+                    <div class="flex flex-wrap gap-2 justify-center mb-4">
+                        <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                        <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Flask</span>
+                        <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">AI/ML</span>
+                        <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Generative AI</span>
+                    </div>
+                    <a href="https://github.com/Sandeep123451/vakilseva" target="_blank" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition-colors">View Project</a>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="pr 2.png" alt="AlgoVision Pro Project" class="w-full h-auto object-cover border-b-4 border-blue-400">
+                <div class="p-6">
+                    <h4 class="text-xl font-bold text-white mb-2">AlgoVision Pro - Interactive Algorithm Visualizer</h4>
+                    <p class="text-gray-400 mb-4">Engineered a dynamic web application with real-time, interactive visualizations to teach core data structures and algorithms, featuring granular user controls.</p>
+                    <div class="flex flex-wrap gap-2 justify-center mb-4">
+                        <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">JavaScript</span>
+                        <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">HTML5</span>
+                        <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">CSS3</span>
+                        <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Firebase</span>
+                    </div>
+                    <a href="https://github.com/Sandeep123451/Algo-vision" target="_blank" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition-colors">View Project</a>
+                </div>
+            </div>
+            
+            <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="pr 3.png" alt="House Price Prediction Project" class="w-full h-auto object-cover border-b-4 border-blue-400">
+                <div class="p-6">
+                    <h4 class="text-xl font-bold text-white mb-2">House Price Prediction Model</h4>
+                    <p class="text-gray-400 mb-4">Developed a robust regression model to accurately predict house prices using advanced feature engineering and machine learning algorithms (e.g., XGBoost, Random Forest).</p>
+                    <div class="flex flex-wrap gap-2 justify-center mb-4">
+                        <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                        <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Machine Learning</span>
+                        <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Pandas/Numpy</span>
+                        <span class="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-0.5 rounded-full">Scikit-learn</span>
+                    </div>
+                    <a href="https://github.com/Sandeep123451/House-Price-Prediction" target="_blank" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition-colors">View Project</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    
+    <!-- Contact -->
+    <section id="contact" class="py-20 p-8 bg-gray-800">
+        <div class="container mx-auto text-center max-w-2xl">
+            <h3 class="text-3xl md:text-4xl font-bold text-white mb-12">Contact Me</h3>
+            <form action="https://formspree.io/f/xrbanrjv" method="POST" class="space-y-6">
+                <div>
+                    <input type="text" name="name" placeholder="Your Name" class="w-full p-4 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white" required>
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="Your Email" class="w-full p-4 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white" required>
+                </div>
+                <div>
+                    <input type="text" name="subject" placeholder="Subject" class="w-full p-4 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white" required>
+                </div>
+                <div>
+                    <textarea name="message" rows="5" placeholder="Your Message" class="w-full p-4 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white" required></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+
+   
+</body>
+</html>

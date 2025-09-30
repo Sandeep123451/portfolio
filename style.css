@@ -1,0 +1,29 @@
+/* style.css */
+@keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 10px #3b82f6, 0 0 20px #3b82f6, 0 0 30px #3b82f6; }
+    50% { box-shadow: 0 0 15px #60a5fa, 0 0 30px #60a5fa, 0 0 45px #60a5fa; }
+}
+
+.animate-pulse-glow {
+    animation: pulse-glow 3s infinite;
+}
+/* style.css */
+
+/* style.css */
+
+/* New keyframe animation for a pulsing text effect */
+@keyframes text-pulse {
+    0%, 100% {
+        text-shadow: 0 0 5px #3b82f6;
+    }
+    50% {
+        text-shadow: 0 0 10px #60a5fa,
+                     0 0 20px #60a5fa;
+    }
+}
+
+/* Apply the animation to the navigation links */
+nav a {
+    animation: text-pulse 2s infinite ease-in-out;
+    transition: color 0.3s ease;
+}
